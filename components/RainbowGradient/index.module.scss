@@ -1,0 +1,111 @@
+.outer {
+  width: 200px;
+  opacity: 1;
+  filter: blur(0px);
+  color: #fff;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+.rainbowGradient {
+  display: block;
+  width: 200px;
+  height: 50px;
+  opacity: 0.8;
+  padding: 1px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  --full-gradient: radial-gradient(
+    #c42d01 0%,
+    #c42d01 10%,
+    #fcf26e 40%,
+    #00e754 60%,
+    #00eef4 70%,
+    #0070f3 100%
+  );
+}
+.rainbowGradient::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: var(--full-gradient);
+  background-size: 300% 300%;
+  padding: 1px;
+  border-radius: 32px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-animation: translateGradient 10s linear infinite;
+  animation: translateGradient 10s linear infinite;
+  will-change: background-position;
+}
+.childWrapper {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 18px;
+  width: 230px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fafafa;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.btn:focus-visible {
+  outline: 1px auto -webkit-focus-ring-color;
+  border-radius: 0;
+}
+
+.btn_reset {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  color: #fff;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  text-indent: 0px;
+  text-shadow: none;
+}
+
+@keyframes translateGradient {
+  0% {
+    background-position: -20% -20%;
+  }
+
+  25% {
+    background-position: 30% 80%;
+  }
+
+  50% {
+    background-position: 110% 110%;
+  }
+
+  75% {
+    background-position: 80% 30%;
+  }
+
+  to {
+    background-position: -20% -20%;
+  }
+}
