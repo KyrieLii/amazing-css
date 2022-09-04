@@ -1,3 +1,6 @@
+/**
+ * by https://nextjs.org/conf 👍🏻
+ */
 import styles from "./index.module.scss";
 
 const RainbowGradient = () => (
