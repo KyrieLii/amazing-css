@@ -25,3 +25,20 @@ a {
     background: black;
   }
 }
+
+@font-face {
+  font-family: "latin";
+  src: url("../public/fonts/latin.woff2");
+}
+@font-face {
+  font-family: "cascadia code";
+  src: url("../public/fonts/CascadiaCode.ttf");
+}
+@font-face {
+  font-family: "popins-bold";
+  src: url("../public/fonts/popins-bold.woff2");
+}
+@font-face {
+  font-family: "popins-thin";
+  src: url("../public/fonts/popins-thin.woff2");
+}

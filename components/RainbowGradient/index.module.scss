@@ -3,6 +3,7 @@
   opacity: 1;
   filter: blur(0px);
   color: #fff;
+  font-family: popins-thin;
 }
 .wrapper {
   position: relative;
@@ -65,7 +66,6 @@
   font-weight: 500;
   color: #fafafa;
   background: rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 }
 .btn:focus-visible {
   outline: 1px auto -webkit-focus-ring-color;
@@ -87,6 +87,7 @@
   text-indent: 0px;
   text-shadow: none;
   background: none;
+  cursor: pointer;
 }
 
 @keyframes translateGradient {
