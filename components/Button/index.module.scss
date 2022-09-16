@@ -1,0 +1,26 @@
+@import "~styles/theme";
+
+.btn {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  color: $main-text-color;
+  background-color: #a4e8a3;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  line-height: 130%;
+  border: 2px solid $main-text-color;
+  border-radius: 1rem;
+  transition: 0.35s;
+  cursor: pointer;
+  user-select: none;
+  &:hover {
+    top: 0.25rem;
+    box-shadow: 0 -1px 0 $main-text-color, 0 -3px 0 -1px $main-text-color,
+      0 -5px 0 -2px $main-text-color, 0 -7px 0 -3px $main-text-color,
+      0 -9px 0 -5px $main-text-color, 0 -11px 0 -6px $main-text-color;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}

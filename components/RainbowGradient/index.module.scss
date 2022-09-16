@@ -1,8 +1,10 @@
+@import "~styles/theme";
+
 .outer {
   width: 200px;
   opacity: 1;
   filter: blur(0px);
-  color: #fff;
+  color: $main-text-color;
   font-family: popins-thin;
 }
 .wrapper {
@@ -17,7 +19,7 @@
   width: 200px;
   height: 50px;
   opacity: 0.8;
-  padding: 1px;
+  padding: 2px;
   pointer-events: none;
   position: absolute;
   z-index: 0;
@@ -40,7 +42,7 @@
   aspect-ratio: 1/1;
   background: var(--full-gradient);
   background-size: 300% 300%;
-  padding: 1px;
+  padding: 2px;
   border-radius: 32px;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -64,7 +66,7 @@
   border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
-  color: #fafafa;
+  color: $main-text-color;
   background: rgba(0, 0, 0, 0.2);
 }
 .btn:focus-visible {
@@ -79,7 +81,7 @@
   border: 0;
   box-sizing: border-box;
   font: inherit;
-  color: #fff;
+  color: $main-text-color;
   font-size: 100%;
   vertical-align: baseline;
   text-decoration: none;

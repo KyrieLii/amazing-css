@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import styles from "../styles/Home.module.scss";
 import RainbowGradient from "@/components/RainbowGradient";
 import Title from "@/components/Title";
+import Button from "@/components/Button";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,9 @@ const Home: NextPage = () => {
       </section>
       <section>
         <Title />
+      </section>
+      <section>
+        <Button />
       </section>
     </div>
   );

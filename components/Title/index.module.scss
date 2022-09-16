@@ -1,5 +1,7 @@
+@import "~styles/theme";
+
 .title {
-  color: #fff;
+  color: $main-text-color;
   font-size: 2rem;
   background-image: linear-gradient(transparent 60%, rgba(#a4e8a3, 1) 60%);
   background-position: top center;
