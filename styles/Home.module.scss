@@ -1,22 +1,19 @@
 @import "~styles/theme";
 
 .container {
-  width: 100vw;
+  position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: $main-text-color;
   title {
     display: block;
-    position: absolute;
-    top: 20px;
     font-size: 40px;
     font-family: popins-bold;
     font-feature-settings: "kern";
     font-weight: 700;
     line-height: 1.35;
+    background-image: linear-gradient(60deg, #437be6, #f95e93);
+    background-clip: text;
+    color: transparent;
   }
   section {
     margin: 20px;
